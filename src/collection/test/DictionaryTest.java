@@ -10,7 +10,7 @@ public class DictionaryTest {
         Scanner scanner = new Scanner(System.in);
         System.out.println("==단어 입력 단계==");
 
-        }
+
         while(true){
             System.out.println("영어 단어 뜻을 입력하세요 (종료 q)");
             String command = scanner.nextLine();

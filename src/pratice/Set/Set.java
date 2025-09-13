@@ -1,6 +1,7 @@
 package pratice.Set;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Objects;
 
@@ -64,4 +65,6 @@ public class Set {
                 ", set=" + Arrays.toString(set) +
                 '}';
     }
+
+
 }
