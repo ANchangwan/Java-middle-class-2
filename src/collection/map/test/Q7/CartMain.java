@@ -11,5 +11,8 @@ public class CartMain {
         cart.add(new Product("사과", 1000), 2);
         cart.printAll();
 
+        cart.minus(new Product("사과",1000),1);
+        cart.printAll();
+
     }
 }

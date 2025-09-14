@@ -13,7 +13,7 @@ public class Cart {
         // hashcode랑 equals를 구현 안하면 다른 키값으로 map이 저장됨
     }
 
-    public void minus(Product product) {
+    public void minus(Product product, int quantity) {
         int currentQuantity = products.getOrDefault(product, 0);
         int updatedQuantity = currentQuantity - quantity;
 
@@ -25,6 +25,7 @@ public class Cart {
     }
 
     public void printAll(){
+        System.out.println("====현재 상품====");
         for (Map.Entry<Product, Integer> entry : products.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
