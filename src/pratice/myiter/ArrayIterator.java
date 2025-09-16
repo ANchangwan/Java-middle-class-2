@@ -1,12 +1,10 @@
-package pratice.Iterator;
+package pratice.myiter;
 
 import java.util.Iterator;
 
 public class ArrayIterator implements Iterator<Integer> {
-    private int currentIndex = -1;
     private int[] array;
-    private int size;
-
+    private int currentIndex = -1;
 
     public ArrayIterator(int[] array) {
         this.array = array;
@@ -21,5 +19,4 @@ public class ArrayIterator implements Iterator<Integer> {
     public Integer next() {
         return array[++currentIndex];
     }
-
 }
